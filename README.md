@@ -37,8 +37,8 @@ Note: This script assumes that the required expression matrix (expr_mat), metada
 
 ## Molecular Dynamics Analysis (Python)
 Scripts for analyzing MD trajectories:
-- `RMSD.py`: Root Mean Square Deviation calculation.
-- `RMSF.py`: Root Mean Square Fluctuation analysis.
-- `Rg.py`: Radius of Gyration.
-- `SASA.py`: Solvent Accessible Surface Area calculation.
+- `plot_rmsd.py`: Root Mean Square Deviation calculation.
+- `plot_rmsf.py`: Root Mean Square Fluctuation analysis.
+- `plot_rg.py`: Radius of Gyration.
+- `plot_sasa.py`: Solvent Accessible Surface Area calculation.
 
