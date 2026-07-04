@@ -1,8 +1,7 @@
 # ESR1-Procyanidin-in-silico
 Scripts and workflows for the in silico evaluation of procyanidin as a potential ESR1 inhibitor in uterine fibroids and endometriosis.
 
-
-## 🧬 Transcriptomic Analysis (`analysis.R`)
+## Transcriptomic Analysis (`analysis.R`)
 
 The `analysis.R` script provides a complete workflow for processing and analyzing transcriptomic data related to ESR1 expression and its regulation by Procyanidin in uterine fibroids and endometriosis.
 
@@ -14,22 +13,32 @@ The `analysis.R` script provides a complete workflow for processing and analyzin
 
 ### Dependencies
 Before running the script, ensure you have the required Bioconductor and CRAN packages installed:
+
 ```R
 # CRAN packages
 install.packages(c("tidyverse", "ggplot2", "ggpubr"))
 
 # Bioconductor packages
 if (!requireNamespace("BiocManager", quietly = TRUE))
-install.packages("BiocManager")
+    install.packages("BiocManager")
 BiocManager::install(c("GEOquery", "limma", "clusterProfiler", "org.Hs.eg.db", "pathview"))
 
 
 
-Usage
+### Usage
 To execute the transcriptomic analysis, set your R working directory to the project folder and run the script:
 
 R
 source("analysis.R")
 
 Note: This script assumes that the required expression matrix (expr_mat), metadata table (meta_table), and other relevant objects are already loaded in your R environment, or that you have configured the file paths within the script accordingly.
+
+
+
+## Molecular Dynamics Analysis (Python)
+Scripts for analyzing MD trajectories:
+- `RMSD.py`: Root Mean Square Deviation calculation.
+- `RMSF.py`: Root Mean Square Fluctuation analysis.
+- `Rg.py`: Radius of Gyration.
+- `SASA.py`: Solvent Accessible Surface Area calculation.
 
